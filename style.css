@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", serif;
+}
+body{
+   
+    background-color: rgb(1, 1, 26);
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    right: 0;
+    left: 0;
+    background-color: black;
+    z-index: 2;
+    border-bottom: 2px solid white;
+    padding: 1px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 3%;
+}
+.logo h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+.logo h1:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    color: green;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    align-items: center;
+}
+nav ul li a{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 18px;
+    color: white;
+    letter-spacing: 1px;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+    padding: 3px 0;
+    transition: 0.2s ease-in-out;
+    color: wheat;
+}
+.iconeBurguer i{
+    font-size: 3rem;
+    font-weight: 900;
+    display: none;
+}
+nav ul.open{
+    left: 0;
+}
+
+/* estilizando a section-home */
+
+main .home{
+ width: 100%;
+ padding: 15% 0 0 0;
+
+
+}
+main .home-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+main .home-flex .home-text{
+    width: 50%;
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Posição inicial */
+    animation: fadeInUp 2s ease-out forwards; /* Animação */
+}
+main .home-flex .home-text .social-media{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 40px 0;
+}
+main .home-flex .home-text .social-media i{
+    color: blueviolet;
+    font-size: 2rem;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 700;
+}
+main .home-flex .home-text .social-media i:hover{
+    background-color: yellow;
+    transition: 0.4s ease-in-out;
+    color: black;
+    box-shadow: 0 0 20px white;
+}
+
+
+main .home-flex .home-text h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+}
+main .home-flex .home-text span{
+    color: yellowgreen;
+}
+main .home-flex .home-text h2{
+    margin: 20px 0;
+    color: white;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+main .home-flex .home-text .links-important{
+    display: flex;
+    place-items: center;
+    gap: 3rem ;
+}
+
+main .home-flex .home-text .links-important .download-button{
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    background-color: yellowgreen;
+    font-weight: 700;
+    cursor: pointer;
+    will-change: filter;
+    box-shadow: 2px 10px 10px black;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.225));
+    animation: cursando 0.8s ease-in-out infinite;
+}
+main .home-flex .home-text .links-important .download-button:hover{
+  opacity: 0.8;
+  transition: 0.5s ease-in-out;
+}
+@keyframes cursando{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(20%);
+    }
+}
+
+main .home-flex .home-text .button-btn{
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 10px;
+    background: linear-gradient(50deg, rgb(6, 6, 137), white);
+    box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.706);
+    color: white;
+    cursor: pointer;
+    animation: animarButton 5s ease-in-out infinite;
+}
+
+@keyframes animarButton {
+    0%{
+      transform: translateX(0%);
+    }
+    50%{
+        transform: translate(20%);
+    }
+}
+main .home-flex .home-text .button-btn:hover{
+    opacity: 0.5;
+    transition: 0.3s ease-in-out ;
+}
+
+main .home-flex .home-imagem img{
+    width: 80%;
+    animation: imagemFloat 2s ease-in-out infinite;
+}
+@keyframes imagemFloat{
+    20%{
+        transform: translateY(10px);
+    }
+}
+
+/* estilizando a section-about */
+
+
+.about .about-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.about .about-flex .about-imagem{
+    width: 50%;
+}
+.about .about-flex .about-imagem img{
+    width: 100%;
+}
+.about .about-flex .about-text{
+    width: 90%;
+}
+.about .about-flex .about-text h1{
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.about .about-flex .about-text h3{
+    color: white;
+
+}
+.about .about-flex .about-text span{
+    color: yellowgreen;
+}
+
+/* estilizando a section-cards */
+
+.skills{
+    margin: 10% 0;
+}
+.skills .container h2{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 8%;
+}
+.skills .cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    margin: 5px 0;
+}
+.skills .cards .card-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: black;
+    text-align: center;
+    background-color: rgb(247, 214, 214);
+    width: 250px;
+    height: 100%;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 40px 0;
+    cursor: pointer;
+    box-shadow: 2px 20px 20px rgba(0, 0, 0, 0.844);
+}
+.skills .cards .card-item:hover{
+    transform: translateY(-30px);
+    transition: 0.5s ease-in-out;
+    background-color:#CD5C5C ;
+   color: white;
+}
+.skills .cards .card-item img{
+    width: 90%;
+    height: 120px;
+    border-radius: 7px;
+}
+.skills .cards .card-item h3{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* estilizando a section-projectos */
+
+.projects {
+    margin: 7% 0;
+}
+.projects .container h1{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.projects .project-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    flex-wrap: wrap;
+    
+}
+.projects .project-flex .projecards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 20px 20px black;
+    margin-top: 30px;
+    transform: scale(1.1);
+}
+.projects .project-flex .projecards:hover{
+    transform: translateX(10px);
+    transition: 0.4s ease-in-out;
+}
+.projects .project-flex img{
+    width: 300px;
+    height: 280px;
+    border-radius: 10px;
+    object-fit: fill;
+}
+
+/*estilizando a section-contactos  */
+
+.contactos{
+   margin-top: 7% ;
+}
+.contactos .container h1{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* estilizando a section-form-flex */
+
+.contactos{
+    margin-top: 10%;
+}
+.contactos .container h1{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.contactos .quality{
+    width: 100%;
+    height: 5px;
+    position: relative;
+    background-color: white;
+    margin: 40px 0;
+}
+.contactos .pontinhos{
+   position: absolute;
+   height: 5px;
+   background-color: yellow;
+   width: 70%;
+   border-radius: 50%;
+   box-shadow: 0 0 20px;
+   
+}
+.contactos .form-flex{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    width: 100%;
+}
+.contactos .form-flex .img-flex{
+    width: 50%;
+}
+.contactos .form-flex .img-flex img{
+    width: 100%;
+}
+.contactos .form-flex .formulario{
+    width: 50%;
+}
+.contactos .form-flex .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.contactos .form-flex .formulario form label{
+    font-size: 1.3rem;
+    color: white;
+    text-transform: capitalize;
+   letter-spacing: 1px;
+}
+.contactos .form-flex .formulario form input{
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #4B0082;
+    color: white;
+    letter-spacing: 2px;
+}
+.contactos .form-flex .formulario form input::placeholder{
+    color: white;
+    text-transform: capitalize;
+}
+.contactos .form-flex .formulario form .button-bt{
+    text-align: center;
+    margin-top: 20px;
+}
+.contactos .form-flex .formulario form .button-bt .button-n{
+    padding: 10px 25px;
+    width: 50%;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: #cfcfcfdd;
+
+}
+.contactos .form-flex .formulario form .button-bt .button-n:hover{
+      opacity: 0.5;
+      transition: 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }

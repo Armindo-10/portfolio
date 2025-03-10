@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <title>potfólio-Arminndo</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#home"><h1>Sousa</h1></a>
+                </div>
+                
+                <ul class="ul">
+                 <li><a href="#home">home</a></li>
+                 <li><a href="#sobre-mim">sobre mim</a></li>
+                 <li><a href="#habilidades">habilidades</a></li>
+                 <li><a href="#projectos">projectos</a></li>
+                 <li><a href="#contactos">contactos</a></li>
+                </ul>
+
+                <div class="iconeBurguer">
+                 <i class="bi bi-list" onclick="iconeBurguer()"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main> <!-- main-->
+        <section class="home" id="home"> <!-- section-home-->
+            <div class="container">
+
+                <div class="home-flex"> <!-- div-home-flex-->
+                   
+                    <div class="home-text">
+                        <h1>Olá , eu sou <span>Armindo de Sousa.</span></h1>
+                        <h2>Sou um desenvolvedor frontend apaixonado por criar interfaces funcionais e atraentes que proporcionem uma experiência incrível para os usuários. Meu objetivo é transformar ideias em soluções visuais e interativas, utilizando as melhores práticas de desenvolvimento web.</h2>
+                        <div class="social-media">
+                            <a href="https://github.com/Armindo-10"><i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/armindo-de-sousa-94a850346/"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61571767719126"><i class="bi bi-facebook"></i></a>
+                            
+                        </div>
+
+                    <div class="links-important">
+                        <a href="#contactos">  <button class="button-btn">vamos a isso!</button></a>
+                        <a href="curriculo/curriculo.dev-frontend.pdf" download="Curriculo-Armindo-Sousa.pdf" target="_blank"><button class="download-button">download cv</button></a>
+                    </div>
+                      
+                
+                    </div>
+
+                    <div class="home-imagem">
+                        <img src="CFCS9718-removebg-preview.png" alt="imagemflex">
+                    </div>
+
+                </div> <!-- div-home-flex-->
+            </div>
+
+        </section> <!-- end-section-home-->
+    </main> <!-- main-->
+    
+
+    <section class="about" id="sobre-mim"> <!-- section-about-->
+        <div class="container">
+
+            <div class="about-flex"> <!-- div-about-flex-->
+
+                <div class="about-imagem">
+                    <img src="armindobgnone.png" alt="">
+                </div>
+
+                <div class="about-text">
+                    <h1>Sobre mim</h1>
+
+                    <h3>Com conhecimento em HTML, CSS e JavaScript, além de experiência com <span>React e Git</span> , estou sempre buscando aprender e me aperfeiçoar em novas tecnologias e ferramentas. Acredito que a combinação de um código bem estruturado com um design responsivo e acessível é essencial para criar produtos digitais de qualidade.</h3>
+                </div>
+            </div> <!--end-div-about-flex-->
+
+        </div>
+    </section> <!-- end-section-about-->
+
+    
+    <section class="skills" id="habilidades">
+        <div class="container">
+            <h2>habilidades</h2>
+            <div class="cards">  <!--div-cards-->
+
+                <div class="card-item"> <!--div-card-item1-->
+                  <img src="html-removebg-preview.png" alt="imagemHtml5">
+                    <h3>Html5</h3>
+                    <p>Criação de estruturas semânticas </p>
+                </div><!--div-card-item1-->
+
+                <div class="card-item"><!--div-card-item2-->
+                   <img src="css-removebg-preview.png" alt="imagemcss">
+                    <h3>CSS3</h3>
+                    <p>Estilos modernos, responsivos e criativos</p>
+                </div><!--div-card-item2-->
+
+
+                <div class="card-item"><!--div-card-item3-->
+                    <img src="js-removebg-preview.png" alt="JavaScriptImagem">
+                    <h3>JavaScript</h3>
+                    <p>Interatividade e funcionalidades dinâmicas.</p>
+                </div><!--div-card-item3-->
+
+                <div class="card-item"><!--div-card-item4-->
+                    <img src="React js.png" alt="reactimagem">
+                    <h3>React js</h3>
+                    <p>Familiarizando com a ferreamenta: estudos sobre componentes etc...</p>
+                </div><!--end-div-card-item4-->
+
+
+            </div> <!--div-cards-->
+
+        </div>
+    </section>
+
+    <section class="projects" id="projectos">
+        <div class="container">
+            <h1>projectos</h1>
+
+            <div class="project-flex">
+
+                <div class="projecards">
+                       <a href="https://armindo-10.github.io/projecto-javascript/" target="_blank"> <img src="burguer.png" alt="burguerProjecto"></a>
+                </div>
+
+                <div class="projecards">
+                   <a href="https://armindo-10.github.io/Paleta--de-Cor/" target="_blank"> <img src="paleta-de-cor.png" alt="paleta-de-cor-projecto"></a>
+            </div>
+
+            <div class="projecards">
+               <a href="#tudolist"> <img src="tudo list.png" alt="projectoBrevemente" id="brevemente"></a>
+        </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contactos" id="contactos">
+        <div class="container">
+            <h1>contactos</h1>
+
+
+            <div class="quality">
+                <div class="pontinhos"></div>
+            </div>
+            
+            <div class="form-flex">
+                
+                <div class="img-flex">
+                    <img src="Mobile-bro.png" alt="Mobile-bro-Imagem">
+                </div>
+
+                <div class="formulario">
+
+                    <form action="#" method="post" id="formulario">
+                       <div class="name">
+                        <label for="#">name</label>
+                        <input type="text" id="textName" placeholder="digite seu nome" required>
+                       </div>
+
+                       <div class="email">
+                        <label for="#">email</label>
+                        <input type="email" id="Emailput" placeholder="digite seu email" required>
+                       </div>
+
+                       <div class="senha">
+                        <label for="#senha">senha</label>
+                        <input type="password" id="passwordSenha" placeholder="digite a sua senha">
+                       </div>
+
+                       <div class="phone">
+                        <label for="#">telefone</label>
+                        <input type="number" id="NumberPhone" placeholder="digite seu phone-Number" required>
+                       </div>
+
+                     
+                       
+                       <div class="button-bt">
+                        <a href="#button"><button type="submit" class="button-n">Enviar</button></a>
+                       </div>
+        
+                    </form>
+                </div\>
+                
+            </div>
+          
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
