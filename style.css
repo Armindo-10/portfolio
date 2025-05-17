@@ -223,6 +223,7 @@ main .home-flex .home-imagem img{
 }
 .about .about-flex .about-imagem img{
     width: 100%;
+    object-fit: cover;
 }
 .about .about-flex .about-text{
     width: 90%;
@@ -273,7 +274,7 @@ main .home-flex .home-imagem img{
     text-align: center;
     background-color: rgb(247, 214, 214);
     width: 250px;
-    height: 100%;
+    height: 300px;
     border-radius: 7px;
     padding: 20px;
     margin: 40px 0;
@@ -290,6 +291,7 @@ main .home-flex .home-imagem img{
     width: 90%;
     height: 120px;
     border-radius: 7px;
+    object-fit: cover;
 }
 .skills .cards .card-item h3{
     text-transform: uppercase;
@@ -336,7 +338,7 @@ main .home-flex .home-imagem img{
     width: 300px;
     height: 280px;
     border-radius: 10px;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 /*estilizando a section-contactos  */
@@ -392,6 +394,7 @@ main .home-flex .home-imagem img{
 }
 .contactos .form-flex .img-flex img{
     width: 100%;
+    object-fit: cover;
 }
 .contactos .form-flex .formulario{
     width: 50%;
